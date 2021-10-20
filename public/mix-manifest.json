@@ -1,4 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
+    "/css/fontawesome/css/all.css": "/css/fontawesome/css/all.css",
+    "/css/main.css": "/css/main.css",
     "/css/merged.css": "/css/merged.css"
 }
