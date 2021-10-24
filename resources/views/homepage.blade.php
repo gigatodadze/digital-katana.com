@@ -1,86 +1,378 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Digital-Katana</title>
-    <link rel="stylesheet" href="css/merged.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Project</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/fontawesome/css/all.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<div class="container">
-    <div class="container__item landing-page-container">
-        <div class="content__wrapper">
+<header>
+    <div class="header container">
+        <div class="logo">
+            <img src="/images/logo.png" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Recomendations</a></li>
+                <li><a href="#" class="btn">Purchase</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
 
-            <header class="header">
-                <div class="menu-icon header__item">
-                    <span class="menu-icon__line"></span>
+<section class="demo">
+    <div class="filter">
+        <div class="container play">
+            <div class="text">
+                <h1>Watch Anime</h1>
+                <a href="#"><i class="fas fa-play"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="top">
+    <div class="text container">
+        <h2>Most watched</h2>
+        <p>
+            Lorem ipsum dolor sit amet,
+            consectetuer adipiscing elit.
+            Donec odio. Quisque volutpat mattis eros.
+            Nullam malesuada erat ut
+        </p>
+    </div>
+    <div class="grid container">
+        <div class="block">
+            <img src="/images/ani-1.png" alt="">
+            <h3>Sumon</h3>
+            <a href="#" class='btn'>Watch Now</a>
+        </div>
+        <div class="block">
+            <img src="/images/ani-2.png" alt="">
+            <h3>Kakashi</h3>
+            <a href="#" class='btn'>Watch Now</a>
+        </div>
+        <div class="block">
+            <img src="/images/ani-3.png" alt="">
+            <h3>Naruto</h3>
+            <a href="#" class='btn'>Watch Now</a>
+        </div>
+        <div class="block">
+            <img src="/images/ani-4.png" alt="">
+            <h3>Evangelion</h3>
+            <a href="#" class='btn'>Watch Now</a>
+        </div>
+        <div class="block">
+            <img src="/images/ani-3.png" alt="">
+            <h3>Anime</h3>
+            <a href="#" class='btn'>Watch Now</a>
+        </div>
+        <div class="block">
+            <img src="/images/ani-4.png" alt="">
+            <h3>Anime</h3>
+            <a href="#" class='btn'>Watch Now</a>
+        </div>
+        <div class="block">
+            <img src="/images/ani-1.png" alt="">
+            <h3>Anime</h3>
+            <a href="#" class='btn'>Watch Now</a>
+        </div>
+        <div class="block">
+            <img src="/images/ani-2.png" alt="">
+            <h3>Anime</h3>
+            <a href="#" class='btn'>Watch Now</a>
+        </div>
+    </div>
+</section>
+
+<section class="demo demo-2">
+    <div class="filter">
+        <div class="container play">
+            <div class="text">
+                <h1>Tour our page</h1>
+                <div class="grid">
+
+                    <div class="block">
+                        <div class="image">
+                            <img src="/images/bg-4.png" alt="">
+                            <h4>Anime Name</h4>
+                            <a href=""><i class="fas fa-info-circle"></i></a>
+                        </div>
+
+                        <div class="text">
+                            <p>
+                                Best anime you have ever seen!
+                                Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit.
+                                Dignissimos velit voluptatibus
+                                numquam odio
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <div class="image">
+                            <img src="/images/bg-2.png" alt="">
+                            <h4>Anime Name</h4>
+                            <a href=""><i class="fas fa-info-circle"></i></a>
+                        </div>
+
+                        <div class="text">
+                            <p>
+                                Best anime you have ever seen!
+                                Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit.
+                                Dignissimos velit voluptatibus
+                                numquam odio
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <div class="image">
+                            <img src="/images/bg-2.png" alt="">
+                            <h4>Anime Name</h4>
+                            <a href=""><i class="fas fa-info-circle"></i></a>
+                        </div>
+
+                        <div class="text">
+                            <p>
+                                Best anime you have ever seen!
+                                Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit.
+                                Dignissimos velit voluptatibus
+                                numquam odio
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-                <h1 class="heading header__item">Digital-Katana</h1>
+<section class="awards">
+    <div class="awards_1 container">
+        <div class="movie">
 
-                <ul class="social-container header__item">
-                    <li class="social__icon social__icon--fb">
-                        <a href="https://www.facebook.com/Digital-Katana-100855712398069">
-                        <img src="{{asset('images/facebook.png')}}" alt="facebook">
-                        </a>
-                    </li>
-                    <li class="social__icon social__icon--in">
-                        <img src="{{asset('images/instagram.png')}}" alt="instagram">
-                    </li>
-                    <li class="social__icon social__icon--dr">
-                        <a href="#">
-                            <img src="{{asset('images/linkedin.png')}}" alt="linkedin">
-                        </a>
-                    </li>
+        </div>
 
-                    <li class="social__icon social__icon--fb">
-                        <a href="mailto:info@digital-katana.com">
-                            <img src="{{asset('images/email.png')}}" alt="facebook">
-                        </a>
-                    </li>
-                    <li class="social__icon social__icon--in">
-                        <a href="tel:+995558313933">
-                        <img src="{{asset('images/telephone.png')}}" alt="instagram">
-                        </a>
-                    </li>
-                    <li class="social__icon social__icon--dr">
-                        <a href="#">
-                            <img src="{{asset('images/katana.png')}}" alt="linkedin">
-                        </a>
-                    </li>
+        <div class="text">
+            <h2>Anime Of The Year</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Donec odio. Quisque volutpat
+                mattis eros. Nullam malesuada erat ut turpis.
+                Suspendisse urna nibh, viverra non, semper suscipit,
+                posuere a, pede.
+            </p>
+            <p>
+                Donec nec justo eget felis facilisis fermentum.
+                Aliquam porttitor mauris sit amet orci. Aenean
+                dignissim pellentesque felis.Morbi in sem quis dui
+                placerat ornare. Pellentesque odio nisi, euismod in,
+                pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </div>
+</section>
 
-                </ul>
-            </header>
+<section class="awards awards_2">
+    <div class="awards_1 container">
+        <div class="movie">
 
-            <p class="coords">N 70° 41' 14"S  /   112°34'42"W</p>
+        </div>
 
-            <div class="ellipses-container">
+        <div class="text">
+            <h2>Anime Of The Month</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Donec odio. Quisque volutpat
+                mattis eros. Nullam malesuada erat ut turpis.
+                Suspendisse urna nibh, viverra non, semper suscipit,
+                posuere a, pede.
+            </p>
+            <p>
+                Donec nec justo eget felis facilisis fermentum.
+                Aliquam porttitor mauris sit amet orci. Aenean
+                dignissim pellentesque felis.Morbi in sem quis dui
+                placerat ornare. Pellentesque odio nisi, euismod in,
+                pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </div>
+</section>
 
-                <h2 class="greeting">Digital <br> Katana</h2>
+<section class="recomend">
+    <div class="text container">
+        <h2>User Recomendations</h2>
+        <p>
+            Lorem ipsum dolor sit amet,
+            consectetuer adipiscing elit.
+            Donec odio. Quisque volutpat mattis eros.
+            Nullam malesuada erat ut
+        </p>
+    </div>
 
-                <div class="ellipses ellipses__outer--thin">
-
-                    <div class="ellipses ellipses__orbit"></div>
-
-                </div>
-
-                <div class="ellipses ellipses__outer--thick"></div>
+    <div class="feedbacks container">
+        <div class="feed">
+            <div class="text">
+                <p>
+                    Lorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit.
+                    Donec odio. Quisque volutpat
+                    mattis eros. Nullam malesuada
+                    erat ut turpis.
+                </p>
             </div>
 
-            <div class="scroller">
-                <p class="page-title">Work so hard that people think the Aliens did it</p>
+            <div class="user">
+                <div class="img">
+                    <img src="/images/usr-1.jpg" alt="">
+                </div>
 
-                <div class="timeline">
-                    <span class="timeline__unit"></span>
-                    <span class="timeline__unit timeline__unit--active"></span>
-                    <span class="timeline__unit"></span>
+                <div class="name">
+                    <h5>Shane Warne</h5>
                 </div>
             </div>
+
+        </div>
+
+        <div class="feed">
+            <div class="text">
+                <p>
+                    Lorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit.
+                    Donec odio. Quisque volutpat
+                    mattis eros. Nullam malesuada
+                    erat ut turpis.
+                </p>
+            </div>
+
+            <div class="user">
+                <div class="img">
+                    <img src="/images/usr-2.jpg" alt="">
+                </div>
+
+                <div class="name">
+                    <h5>Giorgi Kakabadze</h5>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="feed">
+            <div class="text">
+                <p>
+                    Lorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit.
+                    Donec odio. Quisque volutpat
+                    mattis eros. Nullam malesuada
+                    erat ut turpis.
+                </p>
+            </div>
+
+            <div class="user">
+                <div class="img">
+                    <img src="/images/usr-3.jpg" alt="">
+                </div>
+
+                <div class="name">
+                    <h5>Shane Warne</h5>
+                </div>
+            </div>
+
         </div>
 
     </div>
 
-</div>
- </body>
+</section>
+
+<section class="subscribe">
+    <div class="filter">
+        <div class="container">
+            <div class="text">
+                <h3>Subscribe To Our Newsletter For Update News</h3>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Enter Your Email">
+                    <button class="btn"   type="submit">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="question">
+    <div class="text container">
+        <h2>Have Any Questions ?</h2>
+        <p>
+            Send us an email with your questions
+        </p>
+    </div>
+
+    <div class="info container">
+        <form action="#" method="post">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Sybject">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+
+        <div class="contact">
+            <div class="block">
+                <h6><i class="fas fa-phone-alt"></i> Call Us :</h6>
+                <p>+01 12345 67890</p>
+                <p>+02 12345 67890</p>
+            </div>
+
+            <div class="block">
+                <h6><i class="fas fa-envelope"></i> Mail Us :</h6>
+                <p>info@yourmail.com</p>
+                <p>support@yourmail.com</p>
+            </div>
+
+            <div class="block">
+                <h6><i class="fas fa-phone-alt"></i> find Us :</h6>
+                <p>25 Royal View Road</p>
+                <p>New York, USA</p>
+            </div>
+
+            <div class="block follow">
+                <a href="#" class="ico">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="ico">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="ico">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="ico">
+                    <i class="fab fa-pinterest-p"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>© Copy 2019 All Rights Reserved</p>
+    </div>
+</footer>
+
+</body>
 </html>

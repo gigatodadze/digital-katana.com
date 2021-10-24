@@ -13,3 +13,5 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
 mix.sass('resources/css/app.scss', 'public/css/merged.css')
+mix.sass('resources/css/main.scss', 'public/css/main.css')
+mix.css('resources/css/fontawesome/css/all.css', 'public/css/fontawesome/css/all.css')
